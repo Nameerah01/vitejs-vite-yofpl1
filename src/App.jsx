@@ -22,6 +22,8 @@ import Hero from './component/Hero'
 import ErrorBoundary from './component/ErrorBoundary'
 import ClickCounter from './component/ClickCounter'
 import HoverCounter from './component/HoverCounter'
+import HookCounter from './component/HookCounter'
+import HookCounterTwo from './component/HookCounterTwo'
 
 
 function App() {
@@ -30,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HoverCounter/>
+        <HookCounterTwo/>
 
       </header>
     </div>
