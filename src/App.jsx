@@ -28,7 +28,8 @@ import HookCounterThree from './component/HookCounterThree'
 import HookCounterFour from './component/HookCounterFour'
 import ClassCounterOne from './component/ClassCounterOne'
 import HookCounterOne from './component/HookCounterOne'
-
+import ClassMouse from './component/ClassMouse'
+import HookMouse from './component/HookMouse'
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HookCounterOne/>
+        <HookMouse/>
 
       </header>
     </div>
