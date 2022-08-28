@@ -26,6 +26,9 @@ import HookCounter from './component/HookCounter'
 import HookCounterTwo from './component/HookCounterTwo'
 import HookCounterThree from './component/HookCounterThree'
 import HookCounterFour from './component/HookCounterFour'
+import ClassCounterOne from './component/ClassCounterOne'
+import HookCounterOne from './component/HookCounterOne'
+
 
 
 function App() {
@@ -34,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HookCounterFour/>
+        <HookCounterOne/>
 
       </header>
     </div>
