@@ -30,6 +30,8 @@ import ClassCounterOne from './component/ClassCounterOne'
 import HookCounterOne from './component/HookCounterOne'
 import ClassMouse from './component/ClassMouse'
 import HookMouse from './component/HookMouse'
+import IntervalClassCounter from './component/IntervalClassCounter'
+import IntervalHookCounter from './component/IntervalHookCounter'
 
 
 function App() {
@@ -38,8 +40,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HookMouse/>
-
+        <IntervalHookCounter/>
       </header>
     </div>
   )
