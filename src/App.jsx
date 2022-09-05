@@ -1,17 +1,25 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
-
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/layout/Navbar";
+import Home from "./components/pages/Home";
+import DefaultPage from "./components/pages/DefaultPage";
+import Recipes from "./components/pages/Recipes";
+import RecipeDetails from "./components/pages/RecipeDetails";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        
-      </header>
-    </div>
+    <React.Fragment>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/recipes" component={Recipes} />
+          <Route exact path="/recipes/:recipe_id" component={RecipeDetails} />
+          <Route component={DefaultPage} />
+        </Switch>
+      </Router>
+    </React.Fragment>
   );
 }
 
